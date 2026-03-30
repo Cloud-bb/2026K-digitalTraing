@@ -8,21 +8,22 @@ public class a2026_03_30 {
 		int[] lotto = new int[6];
 
 		for (int i = 0; i < lotto.length; i++) {
-			lotto[i] = (int) (Math.random() * 6) + 1;
+			lotto[i] = (int) (Math.random() * 45) + 1;
 
 			// 중복검사
 			for (int j = 0; j < i; j++) {
-				if (lotto[i] == lotto[j])
+				if (lotto[i] == lotto[j]) {
 					i--;
+					break;
+				}
+				
 			}
 		}
-		for (int i = 0; i < lotto.length; i++) {
-			System.out.print(lotto[i] + "\t");
-		}
+		
 		// 배열 정렬
 		Arrays.sort(lotto);
+		
 		// 출력
-		System.out.println("정렬");
 		for (int i = 0; i < lotto.length; i++) {
 			System.out.print(lotto[i] + "\t");
 		}
