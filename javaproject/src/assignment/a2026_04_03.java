@@ -1,7 +1,6 @@
 package assignment;
 
 import java.util.Scanner;
-
 //키보드를 통해서 연도(ex) 2020)를 입력 받는다.
 //이때 입력 받은 연도가 윤년인지 평년인지를 판별하는
 //프로그램을 작성하세요?
